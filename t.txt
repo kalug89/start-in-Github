@@ -15,7 +15,7 @@ You may want to first merge the remote changes (e.g., 'git pull') before pushing
 
 https://stackoverflow.com/questions/20939648/issue-pushing-new-code-in-github
 git push -f origin master
-++++ zamiast tamtego spróbuj tego: git push origin develop:master
+++++ zamiast tamtego spróbuj tego |git pull origin master| i dopiero push
 -------------
 …or create a new repository on the command line
 echo "# 05_YouWeighOn" >> README.md
