@@ -1,1 +1,29 @@
-123
+git init 
+git add -A .
+git commit -m .
+
+git remote add origin git@github.com:username/new_repo
+git push -u origin master
+
+
+When you created your repository on GitHub, you created a README.md, which is a new commit.
+Your local repository doesn't know about this commit yet. Hence:
+Updates were rejected because the remote contains work that you do not have locally.
+You may want to find to follow this advice:
+You may want to first merge the remote changes (e.g., 'git pull') before pushing again.
+
+
+https://stackoverflow.com/questions/20939648/issue-pushing-new-code-in-github
+git push -f origin master
+++++ zamiast tamtego spróbuj tego: git push origin develop:master
+-------------
+…or create a new repository on the command line
+echo "# 05_YouWeighOn" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/kalug89/05_YouWeighOn.git
+git push -u origin master
+…or push an existing repository from the command line
+git remote add origin https://github.com/kalug89/05_YouWeighOn.git
+git push -u origin master
